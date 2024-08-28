@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Travel</title>
+    <!-- cdn font awesome -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+
+    <!-- cdn google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: "Mulish", sans-serif; -->
+    <!-- cdn tailwind and daisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- cdn tailwind config  -->
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_orange: "#FF5400",
+              // secondary: "rgb(17, 17, 17)",
+              // body: "rgb(248, 246, 243)",
+              // accent: "rgb(106, 151, 57)",
+              // body_neutral: "rgb(51, 51, 51)",
+            },
+            fontFamily: {
+              // Poppins: "Poppins",
+            },
+            backgroundImage: {
+              gradient_with_image:
+                "linear-gradient(180deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('images/hero.png')",
+
+              discount_card_1: "url(./images/deals-1.png)",
+              maldives_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url(./images/maldev.png)",
+              indonesia_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/indonesia.png')",
+              turkey_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/turkey.png')",
+              america_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/america.png')",
+              kashmir_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/kashmir.png')",
+              bd_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/ban.png')",
+              saudi_bg:
+                "linear-gradient(rgba(19, 19, 24, 0.2), rgba(19, 19, 24, 0.2)), url('./images/bandarban.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-11/12 mx-auto mb-28">
+      <!-- section nav-bar  -->
+      <nav class="mt-3 mb-6">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div
+              class="flex items-center gap-3 btn btn-ghost hover:bg-transparent"
+            >
+              <img src="images/logo.png" alt="" class="w-[3rem]" />
+              <p class="text-[2rem] text-[#131318] font-extrabold">
+                Hero <span class="text-primary_orange">Travel</span>
+              </p>
+            </div>
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+          </div>
+
+          <div class="navbar-end">
+            <!-- <a class="btn">Button</a> -->
+            <div class="hidden lg:block">
+              <ul class="menu menu-horizontal px-1 text-[#424247]">
+                <li class="hover:text-primary_orange"><a>Home</a></li>
+                <li class="hover:text-primary_orange"><a>Packages</a></li>
+                <li class="hover:text-primary_orange"><a>Testimonial</a></li>
+                <li class="hover:text-primary_orange"><a>Blog</a></li>
+                <li class="hover:text-primary_orange"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Packages</a></li>
+                <li><a>Testimonial</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- sec hero  -->
+      <section
+        class="py-32 w-full bg-gradient_with_image bg-cover bg-no-repeat rounded-2xl"
+      >
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+          <h1 class="text-white font-extrabold text-6xl">
+            Explore Your Travel
+          </h1>
+          <p class="text-white w-1/2 text-center">
+            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </p>
+
+          <!-- container text field  -->
+          <div
+            class="flex justify-center gap-5 w-3/4 bg-[#FFFFFF4D] p-4 rounded-lg"
+          >
+            <!-- text field 1 -->
+            <div class="flex-1 text-[#13131880]">
+              <select class="select w-full max-w-xs">
+                <option disabled selected>Where Go</option>
+                <option>Homer</option>
+                <option>Marge</option>
+                <option>Bart</option>
+                <option>Lisa</option>
+                <option>Maggie</option>
+              </select>
+            </div>
+            <!-- text field-2  -->
+            <div class="flex-1 text-[#13131880]">
+              <select class="select w-full max-w-xs">
+                <option disabled selected>When</option>
+                <option>Homer</option>
+                <option>Marge</option>
+                <option>Bart</option>
+                <option>Lisa</option>
+                <option>Maggie</option>
+              </select>
+            </div>
+            <!-- text field 3 -->
+            <div class="flex-1 text-[#13131880]">
+              <select class="select w-full max-w-xs">
+                <option disabled selected>Select Type</option>
+                <option>Homer</option>
+                <option>Marge</option>
+                <option>Bart</option>
+                <option>Lisa</option>
+                <option>Maggie</option>
+              </select>
+            </div>
+            <!-- text field 4 -->
+            <div
+              class="flex-1 text-white bg-primary_orange flex justify-center items-center gap-3 rounded-lg font-bold btn btn-ghost"
+            >
+              <i class="fa-sharp fa-regular fa-magnifying-glass font-bold"></i>
+              <p>Find Now</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="w-11/12 mx-auto">
+      <!--sec our tour section -->
+      <section
+        class="grid grid-cols-2 mb-28 h-[500px] justify-items-end px-[7%] gap-4"
+      >
+        <!-- container left   -->
+        <div class="space-y-6 flex flex-col justify-between">
+          <h1 class="text--[##131318] font-extrabold text-4xl">
+            Our Popular Tours
+          </h1>
+          <p class="text-[#5A5A5D]">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+            odio sit massa. Sodales dictumst nec nibh pellentesque.
+          </p>
+          <ul class="text-[#131318B3] list-disc pl-4 space-y-4">
+            <li>
+              Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+              nullam odio neque diam. Sociis erat at .
+            </li>
+            <li>
+              Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+              porta lacus. Lectus suspendisse nullam.
+            </li>
+            <li>
+              Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+              Risus at in.
+            </li>
+          </ul>
+          <p class="text-[#5A5A5D]">
+            Amet consectetur. Vulputate commodo felis molestie risus ornare
+            nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus
+            semper tincidunt.
+          </p>
+          <button
+            class="text-white bg-primary_orange py-3 px-8 rounded-lg w-fit btn btn-ghost hover:bg-primary_orange"
+          >
+            Read More
+          </button>
+        </div>
+
+        <!-- container right ( image container  ) -->
+        <div class="h-[500px] w-fit">
+          <img src="images/popular-tour.png" alt="" class="h-full" />
+        </div>
+      </section>
+
+      <!-- sec choose destination  -->
+      <section class="mb-40">
+        <!--sub container head portion  -->
+        <h1 class="text-4xl text-[#131318] font-extrabold text-center">
+          Choose Your Destination
+        </h1>
+        <p class="text-[#131318B3] text-center w-1/2 mx-auto mt-3 mb-10">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+
+        <!-- fg gird portion  -->
+        <div
+          class="grid grid-cols-12 justify-center justify-items-center gap-5"
+        >
+          <!-- grid cols  -->
+          <div
+            class="col-span-6 w-full text-center h-[275px] flex justify-center items-center bg-maldives_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            <p class="font-extrabold text-white text-2xl">Maldives</p>
+          </div>
+          <div
+            class="col-span-6 w-full text-center h-[275px] flex justify-center items-center bg-indonesia_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            Indonesia
+          </div>
+          <div
+            class="col-span-4 w-full text-center h-[275px] flex justify-center items-center bg-turkey_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            Turkey
+          </div>
+          <div
+            class="col-span-5 w-full text-center h-[275px] flex justify-center items-center bg-america_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            North America
+          </div>
+          <div
+            class="col-span-3 w-full text-center h-[275px] flex justify-center items-center bg-kashmir_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            Kashmir
+          </div>
+          <div
+            class="col-span-5 w-full text-center h-[275px] flex justify-center items-center bg-bd_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            Bangladesh
+          </div>
+          <div
+            class="col-span-7 w-full text-center h-[275px] flex justify-center items-center bg-saudi_bg bg-cover bg-no-repeat rounded-2xl"
+          >
+            Saudi
+          </div>
+        </div>
+      </section>
+
+      <!-- sec discount section  -->
+      <section class="mb-96">
+        <!-- top portion  -->
+        <div></div>
+        <!-- cards container  -->
+        <div class="">
+          <!-- card-1  -->
+          <div
+            class="bg-discount_card_1 bg-no-repeat bg-cover py-[55px] h-[500px] rounded-2xl relative"
+          >
+            <!-- element container  -->
+            <div
+              class="shadow-xl p-10 w-2/5 bg-[#FFFFFFCC] backdrop-blur-sm absolute right-[64px] top-1/2 transform -translate-y-1/2 rounded-2xl"
+            >
+              <!-- top element  -->
+              <div class="flex gap-10 mb-6">
+                <div>
+                  <i class="fa-solid fa-clock"></i>
+                  <p class="inline-block">7 Day / 6 Night</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p class="inline-block">Max : 10</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="inline-block">Malaysia</p>
+                </div>
+              </div>
+              <h1 class="text-[#131318] text-2xl pb-4 font-extrabold">
+                Tour To Satorini
+              </h1>
+              <p class="text-[#5A5A5D]">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare
+                nulla amet et. Libero commodo sagittis dignissim adipiscing
+                quis. Habitant adipiscing.
+              </p>
+              <h2 class="text-primary_orange text-2xl font-extrabold pt-4 pb-6">
+                Price: $1300-$1500
+              </h2>
+              <button
+                class="bg-primary_orange px-[20px] py-[10px] rounded-lg text-white font-extrabold text-xl btn btn-ghost hover:bg-primary_orange"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
